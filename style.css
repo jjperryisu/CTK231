@@ -1,7 +1,18 @@
 /* Anything between these two tags will be ignored by the browser */
 
 h1 {
-    color: red;
+    color:brown;
+    background-color: #00FF00;
+}
+
+h2 {
+    color:aqua;
+    background-color:indigo
+}
+
+h3 {
+    color:pink;
+    background-color:blanchedalmond
 }
 
 /*
@@ -11,36 +22,43 @@ p {
 }
 */
 
+p {
+  color: red;
+  background-color: yellow;
+}
+
+
 .specialp {
-    color:blue;
-    background-color:#FF0000;
+    color:red;
+    background-color:yellow;
 }
 
 #specialID {
-    color: green;
-    background-color: #ffff33f9;
+    color: red;
+    background-color:yellow;
 }
 
-.orangebg {
-    background-color: orange;
+.yellowbg {
+    background-color: yellow;
 }
 
 .spanstyle {
-    color: blue;
-
+    color: red;
 }
 
+
+
 a {
-    color: #FF0000;
+    color: black;
     text-decoration: none;
 }
 
 a:link {
-    color: #00FF00;
+    color: red;
 }
 
 a:visited {
-    color: #0000FF;
+    color: green;
 }
 
 a:active {
@@ -48,10 +66,10 @@ a:active {
 }
 
 a:hover {
-    color: #FF00FF;
+    color: yellow;
     text-decoration: underline;
 }
 
 footer {
-    background-color: green;
+    background-color:green;
 }
