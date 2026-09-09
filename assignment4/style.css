@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+     background-image: url("ctk3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.imgbox {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    background-color: yellow;
+}
+
+.imgwidth {
+    width: 1000px;
+}
+
+h1 {
+    color:orange;
+    font-style: italic;
+    font-weight: normal;
+     
+}
+
+h2 {
+    color:orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h3 {
+    color:orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h4 {
+    color:orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/*
+p {
+    color: #ff3366;
+    background-color:#00FF00;
+}
+*/
+
+p {
+  color: red;
+  background-color: yellow;
+}
+
+
+.specialp {
+    color:red;
+    background-color:yellow;
+}
+
+#specialID {
+    color: red;
+    background-color:yellow;
+}
+
+.yellowbg {
+    background-color: yellow;
+}
+
+.spanstyle {
+    color: red;
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: #00FFFF;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+footer {
+    background-color:green;
+}
+
+.textcenter {
+    text-align: center;
+    line-height: 48px;
+}
+
+.textjustify {
+    text-align: justify;
+}
