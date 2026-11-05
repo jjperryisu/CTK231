@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Joshua's Art Website</title>
-  <link href="Blank1200px.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.typekit.net/bdu5ybl.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+<link href="Blank1200px.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div id="wrapper">
@@ -11,14 +16,15 @@
     <!-- Top Header Bar -->
     <header>
       <h1>Joshua's Art Website!</h1>
-      <a href="https://canvas.illinoisstate.edu/profile" class="header-link">About Me</a>
+      <a class="bi bi-person-circle" href="https://canvas.illinoisstate.edu/profile" target="_blank"> About Me</a>
+
     </header>
 
     
     <main>
       <!-- Column 1: Web Design -->
       <section class="column col-red">
-        <h2 class="col-title">Web Design</h2>
+        <h2 class="col-title"> Web Design<i class="bi bi-brush"></i></h2>
         <h3 class="col-course">CTK 231</h3>
 
         <article class="project-card">
@@ -39,49 +45,76 @@
 
       <!-- Column 2: Videos -->
       <section class="column col-blue">
-        <h2 class="col-title">Videos</h2>
+        <h2 class="col-title">&nbsp; Videos<i class="bi bi-camera-video"></i></h2>
         <h3 class="col-course">CTK 330</h3>
 
         <article class="project-card">
           <h4>One Day</h4>
-          <img src="one-day.jpg" alt="One Day video project">
+          <iframe 
+            src="https://player.vimeo.com/video/1243869955?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+            style="width: 100%; aspect-ratio: 9 / 16; max-height: 380px; display: block; margin: 10px auto 0; border: 0; border-radius: 6px;" 
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            title="One Day">
+          </iframe>
         </article>
 
         <article class="project-card">
           <h4>Editing</h4>
-          <img src="editing.jpg" alt="Editing video project">
+          <iframe 
+            src="https://player.vimeo.com/video/1243872730?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+            style="width: 100%; aspect-ratio: 16 / 9; display: block; margin-top: 10px; border: 0; border-radius: 6px;" 
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            title="Editing">
+          </iframe>
         </article>
 
         <article class="project-card">
           <h4>Texts &amp; Titles</h4>
-          <img src="texts-titles.jpg" alt="Texts and Titles project">
+          <iframe 
+            src="https://player.vimeo.com/video/1243873284?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+            style="width: 100%; aspect-ratio: 16 / 9; display: block; margin-top: 10px; border: 0; border-radius: 6px;" 
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            title="Texts and Titles">
+          </iframe>
         </article>
       </section>
 
-      <!-- Column 3: Music -->
+     <!-- Column 3: Music -->
       <section class="column col-green">
-        <h2 class="col-title">Music</h2>
-        <h3 class="col-course">CTK 345</h3>
+        <h2 class="col-title">&nbsp; Music<i class="bi bi-music-note-beamed"></i></h2>
+        <h3 class="col-course">CTK 341</h3>
 
         <article class="project-card">
           <h4>2-track song</h4>
-          <img src="2-track.png" alt="2-track song DAW session">
+          <audio controls style="width: 100%; display: block; margin-bottom: 8px;">
+            <source src="mixing a 2-track song[60sec] copy.wav" type="audio/mpeg">
+          </audio>
+          <img src="2-track.png" alt="2-track song DAW session" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; border-radius: 6px;">
         </article>
 
         <article class="project-card">
           <h4>4-track song</h4>
-          <img src="4-track.png" alt="4-track song DAW session">
+          <audio controls style="width: 100%; display: block; margin-bottom: 8px;">
+            <source src="mixing 4-track song copy.wav" type="audio/mpeg">
+          </audio>
+          <img src="4-track.png" alt="4-track song DAW session" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; border-radius: 6px;">
         </article>
 
         <article class="project-card">
           <h4>8-track song</h4>
-          <img src="8-track.png" alt="8-track song DAW session">
+          <audio controls style="width: 100%; display: block; margin-bottom: 8px;">
+            <source src="mixing 8-track song copy.wav" type="audio/mpeg">
+          </audio>
+          <img src="8-track.png" alt="8-track song DAW session" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; border-radius: 6px;">
         </article>
       </section>
 
       <!-- Column 4: Drawings -->
       <section class="column col-yellow">
-        <h2 class="col-title">Drawings</h2>
+        <h2 class="col-title">&nbsp; Drawings<i class="bi bi-pencil-square"></i></h2>
         <h3 class="col-course">ART 104</h3>
 
         <article class="project-card">
@@ -105,8 +138,8 @@
     <!-- Bottom Footer Bar -->
     <footer>
       <span>Footer</span>
-      <a href="mailto:jperry7@ilstu.edu">Contact &#x2709;</a>
-      <a href="http://www.youtube.com/@jjperry2026">Socials &#x25B6;</a>
+      <a class="bi bi-envelope" href="mailto:jperry7@ilstu.edu" target="_blank"></a>
+      <a class="bi bi-youtube" href="http://www.youtube.com/@jjperry2026" target="_blank"></a>
     </footer>
 
   </div>
