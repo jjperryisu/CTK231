@@ -4,7 +4,7 @@
 
 body {
   background-color: #999999;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "adobe-jenson-pro", serif;
   margin: 0;
   padding: 0;
 }
@@ -26,23 +26,44 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 16px 28px;
+  border-radius: 24px;
+  border: 10px solid black;
+  box-shadow: 10px 10px 10px #00c4cc; /* x, y, blur, color */
+   text-shadow: 2px 2px 2px white; /* x, y, blur, color */
+   font-family: "Knewave", system-ui;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  font-family: "Knewave", system-ui;
+  font-size: 30px;
+  transition: all 1s;
+}
+
+header a:hover {
+  color: darkblue;
+  font-size: 32px;
+  
 }
 
 header h1 {
-  text-decoration: underline;
+  text-decoration: none;
   margin: 0;
   font-size: 32px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  
 }
 
 .header-link {
   font-size: 30px;
   font-weight: 900;
   text-transform: uppercase;
-  color: #000;
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
+
 }
 
 
@@ -50,7 +71,9 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
+  
 }
+
 
 .column {
   display: flex;
@@ -62,12 +85,19 @@ main {
 .col-title {
   margin: 0;
   padding: 12px 6px;
+ 
   text-align: center;
   font-size: 26px;
   font-weight: 900;
   text-transform: uppercase;
   color: #000;
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 12px;
+  width: 75%;
+  font-family: "Knewave", system-ui;
+  
 }
+
 
 .col-course {
   margin: -6px 0 0 0;
@@ -77,7 +107,12 @@ main {
   font-style: italic;
   font-weight: bold;
   color: #000;
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 12px;
+  width: 75%;
+  font-family: "Knewave", system-ui;
 }
+
 
 
 .col-red .col-title,
@@ -85,9 +120,17 @@ main {
   background-color: #ff3838;
 }
 
+.col-title .bi-brush {
+  margin-left: 10px; /* Adjust this value to make the gap larger or smaller */
+}
+
 .col-blue .col-title,
 .col-blue .col-course {
   background-color: #0088ff;
+}
+
+.col-title .bi-camera-video {
+  margin-left: 10px; /* Adjust this value to make the gap larger or smaller */
 }
 
 .col-green .col-title,
@@ -95,11 +138,26 @@ main {
   background-color: #2ed573;
 }
 
+.col-title .bi-music-note-beamed {
+  margin-left: 10px; /* Adjust this value to make the gap larger or smaller */
+}
+
 .col-yellow .col-title,
 .col-yellow .col-course {
   background-color: #ffc048;
 }
 
+.col-title .bi-pencil-square {
+  margin-left: 10px; /* Adjust this value to make the gap larger or smaller */
+}
+
+.col-title:hover,
+.col-course:hover {
+  background-color:#00c4cc;
+  transition: all 1s;
+  width: 100%;
+  color: darkblue;
+}
 
 .project-card {
   display: flex;
@@ -120,11 +178,12 @@ main {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
+  border-radius: 24px;
 }
 
 
 footer {
-  text-decoration: underline;
+  text-decoration: none;
   background-color: #00c4cc;
   display: flex;
   justify-content: space-around;
@@ -133,12 +192,22 @@ footer {
   font-size: 26px;
   font-weight: 900;
   text-transform: uppercase;
+  font-family: "Knewave", system-ui;
 }
 
 footer a {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  font-family: "Knewave", system-ui;
+  font-size: 30px;
+  transition: all 1s;
+}
+
+footer a:hover {
+  color: darkblue;
+  font-size: 32px;
+  
 }
