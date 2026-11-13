@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joshua's Art Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/bdu5ybl.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+  
+  <!-- Fancybox & Carousel CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+  
+  <link href="Blank1200px.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id="wrapper">
+    
+    <!-- Top Header Bar -->
+    <header>
+      <h1>Joshua's Art Website!</h1>
+      <a class="bi bi-person-circle" href="https://canvas.illinoisstate.edu/profile" target="_blank"> About Me</a>
+    </header>
+
+    <main>
+      <!-- Column 1: Web Design Carousel -->
+      <section class="column col-red">
+        <h2 class="col-title"> Web Design<i class="bi bi-brush"></i></h2>
+        <h3 class="col-course">CTK 231</h3>
+
+        <div class="carousel-wrapper">
+          <div class="f-carousel category-carousel" id="webDesignCarousel">
+            <div class="f-carousel__slide">
+              <article class="project-card">
+                <h4>Basic CSS</h4>
+                <a href="basic-css.png" data-fancybox="web-design-gallery" data-caption="Basic CSS">
+                  <img src="basic-css.png" alt="Basic CSS project">
+                </a>
+              </article>
+            </div>
+
+            <div class="f-carousel__slide">
+              <article class="project-card">
+                <h4>Advanced CSS</h4>
+                <a href="advanced-css.png" data-fancybox="web-design-gallery" data-caption="Advanced CSS">
+                  <img src="advanced-css.png" alt="Advanced CSS project">
+                </a>
+              </article>
+            </div>
+
+            <div class="f-carousel__slide">
+              <article class="project-card">
+                <h4>Midterm</h4>
+                <a href="midterm.png" data-fancybox="web-design-gallery" data-caption="Midterm Assignment">
+                  <img src="midterm.png" alt="Midterm project">
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Column 2: Videos Carousel (Clickable Poster Cards) -->
+      <section class="column col-blue">
+        <h2 class="col-title">&nbsp; Videos<i class="bi bi-camera-video"></i></h2>
+        <h3 class="col-course">CTK 330</h3>
+
+        <div class="carousel-wrapper">
+          <div class="f-carousel category-carousel" id="videosCarousel">
+            
+            <div class="f-carousel__slide">
+              <article class="project-card">
+                <h4>One Day</h4>
+                <a href="https://vimeo.com/1243869955" data-fancybox="videos-gallery" data-caption="One Day" class="video-thumbnail-card">
+                  <img src="one-day.jpg" alt="One Day Video Thumbnail">
+                  <span class="video-play-badge"><i class="bi bi-play-fill"></i></span>
+                </a>
+              </article>
+            </div>
+
+            <div class="f-carousel__slide">
+              <article class="project-card">
+                <h4>Editing</h4>
+                <a href="https://vimeo.com/1243872730" data-fancybox="videos-gallery" data-caption="Editing" class="video-thumbnail-card">
+                  <img src="editing.jpg" alt="Editing Video Thumbnail">
+                  <span class="video-play-badge"><i class="bi bi-play-fill"></i></span>
+                </a>
+              </article>
+            </div>
+
+            <div class="f-carousel__slide">
+              <article class="project-card">
+                <h4>Texts &amp; Titles</h4>
+                <a href="https://vimeo.com/1243873284" data-fancybox="videos-gallery" data-caption="Texts and Titles" class="video-thumbnail-card">
+                  <img src="texts-titles.jpg" alt="Texts and Titles Video Thumbnail">
+                  <span class="video-play-badge"><i class="bi bi-play-fill"></i></span>
+                </a>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Column 3: Music Carousel -->
+      <section class="column col-green">
+        <h2 class="col-title">&nbsp; Music<i class="bi bi-music-note-beamed"></i></h2>
+        <h3 class="col-course">CTK 341</h3>
+
+        <div class="carousel-wrapper">
+          <div class="f-carousel category-carousel" id="musicCarousel">
+            <div class="f-carousel__slide">
+              <article class="project-card">
+                <h4>2-track song</h4>
+                <audio controls style="width: 100%; display: block; margin-bottom: 8px;">
+                  <source src="mixing a 2-track song[60sec] copy.wav" type="audio/mpeg">
+                </audio>
+                <a href="2-track.png" data-fancybox="music-gallery" data-caption="Logic Pro 2-Track Session">
+                  <img src="2-track.png" alt="2-track song DAW session" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; border-radius: 6px;">
+                </a>
+              </article>
+            </div>
+
+            <div class="f-carousel__slide">
+              <article class="project-card">
+                <h4>4-track song</h4>
+                <audio controls style="width: 100%; display: block; margin-bottom: 8px;">
+                  <source src="mixing 4-track song copy.wav" type="audio/mpeg">
+                </audio>
+                <a href="4-track.png" data-fancybox="music-gallery" data-caption="Logic Pro 4-Track Session">
+                  <img src="4-track.png" alt="4-track song DAW session" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; border-radius: 6px;">
+                </a>
+              </article>
+            </div>
+
+            <div class="f-carousel__slide">
+              <article class="project-card">
+                <h4>8-track song</h4>
+                <audio controls style="width: 100%; display: block; margin-bottom: 8px;">
+                  <source src="mixing 8-track song copy.wav" type="audio/mpeg">
+                </audio>
+                <a href="8-track.png" data-fancybox="music-gallery" data-caption="Logic Pro 8-Track Multitrack Session">
+                  <img src="8-track.png" alt="8-track song DAW session" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; border-radius: 6px;">
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Column 4: Drawings Carousel -->
+      <section class="column col-yellow">
+        <h2 class="col-title">&nbsp; Drawings<i class="bi bi-pencil-square"></i></h2>
+        <h3 class="col-course">ART 104</h3>
+
+        <div class="carousel-wrapper">
+          <div class="f-carousel category-carousel" id="drawingsCarousel">
+            <div class="f-carousel__slide">
+              <article class="project-card">
+                <h4>Sketch 1</h4>
+                <a href="IMG_2920.jpg" data-fancybox="drawings-gallery" data-caption="Sketch 1 - Look Outside Composition">
+                  <img src="IMG_2920.jpg" alt="Drawing Sketch 1">
+                </a>
+              </article>
+            </div>
+
+            <div class="f-carousel__slide">
+              <article class="project-card">
+                <h4>Sketch 2</h4>
+                <a href="IMG_2921.jpg" data-fancybox="drawings-gallery" data-caption="Sketch 2 - 2-Point Perspective Composition">
+                  <img src="IMG_2921.jpg" alt="Drawing Sketch 2">
+                </a>
+              </article>
+            </div>
+
+            <div class="f-carousel__slide">
+              <article class="project-card">
+                <h4>Sketch 3</h4>
+                <a href="IMG_2922.jpg" data-fancybox="drawings-gallery" data-caption="Sketch 3 - Multiple Rooms Composition">
+                  <img src="IMG_2922.jpg" alt="Drawing Sketch 3">
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Footer Bar -->
+    <footer>
+      <span>Footer</span>
+      <a class="bi bi-envelope" href="mailto:jperry7@ilstu.edu" target="_blank"></a>
+      <a class="bi bi-youtube" href="http://www.youtube.com/@jjperry2026" target="_blank"></a>
+    </footer>
+
+  </div>
+
+  <!-- Fancybox & Carousel Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+  <script>
+    // Initialize Fancybox Lightbox for all zoomable galleries
+    Fancybox.bind("[data-fancybox]", {
+      wheel: "slide",
+      Images: {
+        zoom: true
+      }
+    });
+
+    // Initialize Fancybox Carousel on all 4 category carousels
+    const carouselConfig = {
+      infinite: true,
+      center: true,
+      slidesPerPage: 1,
+      Dots: true,
+      Navigation: true
+    };
+
+    document.querySelectorAll(".category-carousel").forEach((carouselElement) => {
+      new Carousel(carouselElement, carouselConfig);
+    });
+  </script>
+</body>
+</html>

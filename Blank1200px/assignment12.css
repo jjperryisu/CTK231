@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #999999;
+  font-family: "adobe-jenson-pro", serif;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+header {
+  background-color: #00c4cc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 28px;
+  border-radius: 24px;
+  border: 10px solid black;
+  box-shadow: 10px 10px 10px #00c4cc;
+  text-shadow: 2px 2px 2px white;
+  font-family: "Knewave", system-ui;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  font-family: "Knewave", system-ui;
+  font-size: 30px;
+  transition: all 1s;
+}
+
+header a:hover {
+  color: darkblue;
+  font-size: 32px;
+}
+
+header h1 {
+  text-decoration: none;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0; /* Prevents carousel content from expanding CSS grid column */
+}
+
+/* Column Header Banners */
+.col-title {
+  margin: 0;
+  padding: 12px 6px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 12px;
+  width: 75%;
+  font-family: "Knewave", system-ui;
+}
+
+.col-course {
+  margin: -6px 0 0 0;
+  padding: 10px 6px;
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  color: #000;
+  border-top-left-radius: 24px;
+  border-bottom-right-radius: 12px;
+  width: 75%;
+  font-family: "Knewave", system-ui;
+}
+
+.col-red .col-title,
+.col-red .col-course {
+  background-color: #ff3838;
+}
+
+.col-blue .col-title,
+.col-blue .col-course {
+  background-color: #0088ff;
+}
+
+.col-green .col-title,
+.col-green .col-course {
+  background-color: #2ed573;
+}
+
+.col-yellow .col-title,
+.col-yellow .col-course {
+  background-color: #ffc048;
+}
+
+.col-title i {
+  margin-left: 10px;
+}
+
+.col-title:hover,
+.col-course:hover {
+  background-color: #00c4cc;
+  transition: all 1s;
+  width: 100%;
+  color: darkblue;
+}
+
+/* Carousel Outer Wrapper */
+.carousel-wrapper {
+  width: 100%;
+  min-width: 0;
+}
+
+.category-carousel {
+  --f-carousel-spacing: 0px;
+  width: 100%;
+}
+
+.category-carousel .f-carousel__slide {
+  width: 100%;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Nav Button Styling */
+.category-carousel .f-button {
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.col-red .category-carousel .f-button:hover {
+  background-color: #ff3838;
+  color: #fff;
+}
+
+.col-blue .category-carousel .f-button:hover {
+  background-color: #0088ff;
+  color: #fff;
+}
+
+.col-green .category-carousel .f-button:hover {
+  background-color: #2ed573;
+  color: #fff;
+}
+
+.col-yellow .category-carousel .f-button:hover {
+  background-color: #ffc048;
+  color: #000;
+}
+
+/* Pagination Dots */
+.category-carousel .f-carousel__dots {
+  margin-top: 8px;
+}
+
+/* Project Card Inside Slides */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.project-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.project-card a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  cursor: zoom-in;
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card a:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Video Thumbnail Card with Play Badge Overlay */
+.video-thumbnail-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.video-play-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  background-color: rgba(0, 136, 255, 0.9);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.video-play-badge i {
+  margin-left: 4px; /* Optical center for play icon */
+}
+
+.video-thumbnail-card:hover .video-play-badge {
+  background-color: #00c4cc;
+  color: #000;
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+
+/* Footer */
+footer {
+  text-decoration: none;
+  background-color: #00c4cc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 18px 24px;
+  font-size: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Knewave", system-ui;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Knewave", system-ui;
+  font-size: 30px;
+  transition: all 1s;
+}
+
+footer a:hover {
+  color: darkblue;
+  font-size: 32px;
+}
